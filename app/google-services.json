@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "147556890222",
+    "project_id": "greendoctor-f8369",
+    "storage_bucket": "greendoctor-f8369.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147556890222:android:cec287474579b3d17a987f",
+        "android_client_info": {
+          "package_name": "isomora.com.greendoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147556890222-84fp1e21ree49i83vjuqgmp234ccjuj8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhRpzwlx8tuCLfSj8PToDlzJooTEoB2lQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147556890222-84fp1e21ree49i83vjuqgmp234ccjuj8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
