@@ -13,6 +13,9 @@ import android.provider.MediaStore
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Gravity
+import android.view.View
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*;
 import java.io.IOException
 
@@ -59,7 +62,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun logOut(view: View) {
+        Firebase.auth.signOut()
+        intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
         if(requestCode == mCameraRequestCode){
             //Considérons le cas de la caméra annulée
             if(resultCode == Activity.RESULT_OK && data != null) {

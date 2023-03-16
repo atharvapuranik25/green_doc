@@ -76,6 +76,11 @@ class LoginActivity : AppCompatActivity() {
 
     // Hook Click Event
 
+    fun gotoSignup(view: View) {
+        intent = Intent(this, SignupActivity::class.java)
+        startActivity(intent)
+    }
+
     fun performSignUp (view: View) {
         if (validateInput()) {
 
